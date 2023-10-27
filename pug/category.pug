@@ -1,0 +1,207 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/lib/bootstrap-grid.min.css")
+        link(rel="stylesheet" href="/lib/bootstrap-reboot.min.css")
+        link(rel="stylesheet" href="/lib/bootstrap-utilities.min.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        link(rel="stylesheet" href="/css/main.css")
+        title Document
+    body         
+        header.header
+            .container
+                .row
+                    .col-xl-6.col-lg-5.col-md-3.col-sm-12
+                        .header__logo 
+                            .header__img 
+                                a(href="home.html") 
+                                    img(src="/img/Logo.png" alt="")
+                            .header__icon 
+                                i.fa-solid.fa-bars.btn.btn-primary(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasRight' aria-controls='offcanvasRight')
+
+                                #offcanvasRight.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasRightLabel')
+                                    .offcanvas-header
+                                        h5#offcanvasRightLabel MENU
+                                        button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+                                    .offcanvas-body
+                                        .off 
+                                            .off__navigatoin 
+                                                ul
+                                                    li
+                                                        a(href="./home.html") Home
+                                                    li
+                                                        a(href="./blog.html") Blog
+                                                    li
+                                                        a(href="./about.html") About Us
+                                                    li
+                                                        a(href="./login.html") Contact us
+                                                    li#sub-m
+                                                        a#sub(href="#") Subscribe
+                    .col-xl-4.col-lg-5.col-md-6
+                        .header__menu 
+                            ul
+                                li
+                                    a(href="./home.html") Home
+                                li
+                                    a(href="./blog.html") Blog
+                                li
+                                    a(href="./about.html") About Us
+                                li
+                                    a(href="./login.html") Contact us
+                    .col-xl-2.col-lg-2.col-md-3
+                        .header__btn 
+                            a(href="./login.html") 
+                                button.bn.bn-header Subscribe    
+
+        section.basiness
+            .container 
+                .basiness__main
+                    .basiness__title    
+                        h5 Business
+                    .basiness__desc 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                    .basiness__info 
+                        p Blog > Business
+
+        section.category 
+            .container 
+                .row
+                    .col-sm-8.col-8   
+                        .all#all
+                            .all__card
+                                .row    
+                                    .col-md-5
+                                        .all__img 
+                                            img(src="/img/all-img1.png", alt="")
+                                    .col-md-7
+                                        .all__main 
+                                            .all__info
+                                                p Business
+                                            .all__name
+                                                h5 Top 6 free website mockup tools 2022
+                                            .all__desc 
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                            .all__card
+                                .row    
+                                    .col-md-5
+                                        .all__img 
+                                            img(src="/img/all-img1.png", alt="")
+                                    .col-md-7
+                                        .all__main 
+                                            .all__info
+                                                p Business
+                                            .all__name
+                                                h5 Top 6 free website mockup tools 2022
+                                            .all__desc 
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                            .all__card
+                                .row    
+                                    .col-md-5
+                                        .all__img 
+                                            img(src="/img/all-img1.png", alt="")
+                                    .col-md-7
+                                        .all__main 
+                                            .all__info
+                                                p Business
+                                            .all__name
+                                                h5 Top 6 free website mockup tools 2022
+                                            .all__desc 
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                            .all__card
+                                .row    
+                                    .col-md-5
+                                        .all__img 
+                                            img(src="/img/all-img1.png", alt="")
+                                    .col-md-7
+                                        .all__main 
+                                            .all__info
+                                                p Business
+                                            .all__name
+                                                h5 Top 6 free website mockup tools 2022
+                                            .all__desc 
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec.
+                    .col-sm-4.col-4 
+                        .category__main
+                            .category__title 
+                                h5 Categories
+                            .category__plan
+                                .category__img 
+                                    img(src="/img/category-img1.png", alt="")
+                                .category__name 
+                                    h5 Startup
+                            .category__plan
+                                .category__img 
+                                    img(src="/img/category-img2.png", alt="")
+                                .category__name 
+                                    h5 Business
+                            .category__plan
+                                .category__img 
+                                    img(src="/img/category-img3.png", alt="")
+                                .category__name 
+                                    h5 Economy
+                            .category__plan
+                                .category__img 
+                                    img(src="/img/category-img4.png", alt="")
+                                .category__name 
+                                    h5 Technology
+                            .category__title#title
+                                h5 All Tags
+                            .category__btn 
+                                button.bn.bn-category#btn1 Business
+                                button.bn.bn-category#btn2 Experience
+                            .category__btn 
+                                button.bn.bn-category#btn3 Screen
+                                button.bn.bn-category#btn4 Technology
+                            .category__btn 
+                                button.bn.bn-category#btn5 Marketing
+                                button.bn.bn-category#btn6 Life
+
+        footer.footer 
+            .container
+                .footer__top    
+                    .footer__logo 
+                        a(href="home.html") 
+                            img(src="/img/logo.png", alt="")
+                    .footer__menu 
+                        ul
+                            li
+                                a(href="./home.html") Home
+                            li
+                                a(href="./blog.html") Blog
+                            li
+                                a(href="./about.html") About Us
+                            li
+                                a(href="./login.html") Contact us
+                .footer__center 
+                    .row
+                        .col-lg-12.col-xl-6
+                            .footer__title 
+                                h5 Subscribe to our news letter to get latest updates and news
+                        .col-lg-12.col-xl-6
+                            .footer__right 
+                                .footer__input 
+                                    form(action="#")
+                                        input(type="email" placeholder="Enter Your Email")
+                                .footer__btn
+                                    button.bn.bn-footer Subscribe
+                .footer__bottom 
+                    .footer__info 
+                        p Finstreet 118 2561 Fintown
+                        p Hello@finsweet.com  020 7993 2905
+                    .footer__social 
+                        a(href="#") 
+                            i.fa-brands.fa-facebook
+                        a(href="#") 
+                            i.fa-brands.fa-twitter
+                        a(href="#") 
+                            i.fa-brands.fa-instagram
+                        a(href="#") 
+                            i.fa-brands.fa-linkedin
+
+
+                    
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js' integrity='sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF' crossorigin='anonymous')

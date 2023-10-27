@@ -1,0 +1,407 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/lib/bootstrap-grid.min.css")
+        link(rel="stylesheet", href="/lib/bootstrap-reboot.min.css")
+        link(rel="stylesheet", href="/lib/bootstrap-utilities.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==", crossorigin="anonymous", referrerpolicy="no-referrer")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        link(rel="stylesheet", href="/css/main.css")
+        title Document
+    body 
+        mixin title(text)
+            .row
+                .col-md-12.col-sm-6
+                    .post__description 
+                        .post__name 
+                            span By
+                            p John Doe
+                            span  |  Aug 23, 2022
+                        .post__info 
+                            p 8 Figma design systems that you can download for free today
+                .col-md-12.col-sm-6
+                    .post__description 
+                        .post__name 
+                            span By
+                            p John Doe
+                            span  |  Aug 23, 2022
+                        .post__info 
+                            p 8 Figma design systems that you can download for free today
+                .col-md-12.col-sm-6
+                    .post__description 
+                        .post__name 
+                            span By
+                            p John Doe
+                            span  |  Aug 23, 2022
+                        .post__info 
+                            p 8 Figma design systems that you can download for free today
+                .col-md-12.col-sm-6
+                    .post__description 
+                        .post__name 
+                            span By
+                            p John Doe
+                            span  |  Aug 23, 2022
+                        .post__info 
+                            p 8 Figma design systems that you can download for free today
+
+
+        header.header
+            .container
+                .row
+                    .col-xl-6.col-lg-5.col-md-3.col-sm-12
+                        .header__logo 
+                            .header__img 
+                                a(href="home.html") 
+                                    img(src="/img/Logo.png", alt="")
+                            .header__icon 
+                                i.fa-solid.fa-bars.btn.btn-primary(type='button', data-bs-toggle='offcanvas', data-bs-target='#offcanvasRight', aria-controls='offcanvasRight')
+
+                                #offcanvasRight.offcanvas.offcanvas-end(tabindex='-1', aria-labelledby='offcanvasRightLabel')
+                                    .offcanvas-header
+                                        h5#offcanvasRightLabel MENU
+                                        button.btn-close.text-reset(type='button', data-bs-dismiss='offcanvas', aria-label='Close')
+                                    .offcanvas-body
+                                        .off 
+                                            .off__navigatoin 
+                                                ul
+                                                    li
+                                                        a(href="./home.html") Home
+                                                    li
+                                                        a(href="./blog.html") Blog
+                                                    li
+                                                        a(href="./about.html") About Us
+                                                    li
+                                                        a(href="./login.html") Contact us
+                                                    li#sub-m
+                                                        a#sub(href="#") Subscribe
+                    .col-xl-4.col-lg-5.col-md-6
+                        .header__menu 
+                            ul
+                                li
+                                    a(href="./home.html") Home
+                                li
+                                    a(href="./blog.html") Blog
+                                li
+                                    a(href="./about.html") About Us
+                                li
+                                    a(href="./login.html") Contact us
+                    .col-xl-2.col-lg-2.col-md-3
+                        .header__btn 
+                            a(href="./login.html") 
+                                button.bn.bn-header Subscribe    
+
+        section.home(style="background-image: url(/img/home-back.png)")
+            .container 
+                .home__main
+                    .home__name 
+                        p Posted on 
+                        span startup
+                    .home__title 
+                        h1 Step-by-step guide to choosing great font pairs
+                    .home__info 
+                        span By 
+                        p James West
+                        span  |  May 23, 2022 
+                    .home__desc 
+                        p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                    .home__btn 
+                        a(href="./blog-post.html") 
+                            button.bn.bn-home Read More >
+
+        section.post
+            .container
+                .post__top
+                    .row
+                        .col-sm-6.col-5
+                            .post__featured#post-name
+                                h5 Featured Post
+                        .col-lg-5.col-sm-4.col-4
+                            .post__all#post-name
+                                h5 All Posts
+                        .col-lg-1.col-sm-2.col-3
+                            .post__view#post-name
+                                a(href="#")  View All
+                .post__bottom 
+                    .row
+                        .col-md-7
+                            .post__left 
+                                .post__img
+                                    img(src="/img/post-img.png", alt="")
+                                .post__john
+                                    span By
+                                    p John Doe
+                                    span  |  May 23, 2022
+                                .post__title
+                                    h5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                .post__desc 
+                                    p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                                .post__btn 
+                                    a(href="./blog-post.html") 
+                                        button.bn.bn-post Read More >
+                        .col-md-5
+                            .post__right
+                                +title
+
+        section.about 
+            .container
+                .about__one 
+                    .row
+                        .col-md-6 
+                            .about__main
+                                .about__name 
+                                    p ABOUT US
+                                .about__title 
+                                    h5 We are a community of content writers who share their learnings
+                                .about__desc 
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .col-md-6 
+                            .about__main
+                                .about__name 
+                                    p Our mision
+                                .about__title 
+                                    h5 Creating valuable content for creatives all around the world
+                                .about__desc 
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        .about__link
+                            a(href="#") Read More >
+
+        section.choose 
+            .container
+                .choose__title 
+                    h5 Choose A Catagory
+                .row
+                    .col-md-3.col-sm-6.col-6
+                        a(href="./category.html") 
+                            .choose__main
+                                .choose__img 
+                                    img(src="../../../img/city.png", alt="")
+                                .choose__name 
+                                    h5 Business
+                                .choose__desc 
+                                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    .col-md-3.col-sm-6.col-6
+                        a(href="./category.html") 
+                            .choose__main
+                                .choose__img 
+                                    img#p-choose(src="../../../img/rocket-choose.png", alt="")
+                                .choose__name 
+                                    h5 Business
+                                .choose__desc 
+                                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    .col-md-3.col-sm-6.col-6
+                        a(href="./category.html") 
+                            .choose__main
+                                .choose__img 
+                                    img#p-choose(src="../../../img/economy-choose.png", alt="economy")
+                                .choose__name 
+                                    h5 Business
+                                .choose__desc 
+                                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    .col-md-3.col-sm-6.col-6
+                        a(href="./category.html") 
+                            .choose__main
+                                .choose__img 
+                                    img#p-choose(src="../../../img/cyborg-choose.png", alt="")
+                                .choose__name 
+                                    h5 Business
+                                .choose__desc 
+                                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+        section.it
+            .container
+                .it__main
+                    .it__img 
+                        img(src="/img/it.png", alt="")
+                    .it__info 
+                        .it__name 
+                            p Why we started 
+                        .it__title  
+                            h5 It started out as a simple idea and evolved into our passion
+                        .it__desc 
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                        .it__btn 
+                            button.bn.bn-it Discover our story >
+
+        section.list
+            .container
+                .list__title
+                    h5 List of Authors
+                .row
+                    .col-md-3.col-sm-6
+                        .list__cards
+                            .list__img 
+                                img(src="/img/list-img1.png", alt="")
+                            .list__name
+                                h5 Floyd Miles
+                            .list__info     
+                                p Content Writer @Company
+                            .list__social 
+                                a(href="#") 
+                                    i.fa-brands.fa-facebook
+                                a(href="#") 
+                                    i.fa-brands.fa-twitter
+                                a(href="#") 
+                                    i.fa-brands.fa-instagram
+                                a(href="#") 
+                                    i.fa-brands.fa-linkedin
+                    .col-md-3.col-sm-6
+                        .list__cards
+                            .list__img 
+                                img(src="/img/list-img2.png", alt="")
+                            .list__name
+                                h5 Dianne Russell
+                            .list__info     
+                                p Content Writer @Company
+                            .list__social 
+                                a(href="#") 
+                                    i.fa-brands.fa-facebook
+                                a(href="#") 
+                                    i.fa-brands.fa-twitter
+                                a(href="#") 
+                                    i.fa-brands.fa-instagram
+                                a(href="#") 
+                                    i.fa-brands.fa-linkedin
+                    .col-md-3.col-sm-6
+                        .list__cards
+                            .list__img 
+                                img(src="/img/list-img3.png", alt="")
+                            .list__name
+                                h5 Jenny Wilson
+                            .list__info     
+                                p Content Writer @Company
+                            .list__social 
+                                a(href="#") 
+                                    i.fa-brands.fa-facebook
+                                a(href="#") 
+                                    i.fa-brands.fa-twitter
+                                a(href="#") 
+                                    i.fa-brands.fa-instagram
+                                a(href="#") 
+                                    i.fa-brands.fa-linkedin
+                    .col-md-3.col-sm-6
+                        .list__cards
+                            .list__img 
+                                img(src="/img/list-img4.png", alt="")
+                            .list__name
+                                h5 Leslie Alexander
+                            .list__info     
+                                p Content Writer @Company
+                            .list__social 
+                                a(href="#") 
+                                    i.fa-brands.fa-facebook
+                                a(href="#") 
+                                    i.fa-brands.fa-twitter
+                                a(href="#") 
+                                    i.fa-brands.fa-instagram
+                                a(href="#") 
+                                    i.fa-brands.fa-linkedin
+
+        section.featured 
+            .container
+                .row
+                    .col-md-2.col-sm-4.col-6
+                        .featured__img
+                            img(src="/img/featured-img1.png", alt="")
+                    .col-md-2.col-sm-4.col-6
+                        .featured__img
+                            img(src="/img/featured-img2.png", alt="")
+                    .col-md-2.col-sm-4.col-6
+                        .featured__img
+                            img(src="/img/featured-img3.png", alt="")
+                    .col-md-2.col-sm-4.col-6
+                        .featured__img
+                            img(src="/img/featured-img4.png", alt="")
+                    .col-md-2.col-sm-4.col-6
+                        .featured__img
+                            img(src="/img/featured-img5.png", alt="")
+                    .col-md-2.col-sm-4.col-6
+                        .featured__img
+                            img(src="/img/featured-img6.png", alt="")
+
+        section.what 
+            .container 
+                .what__main 
+                    .row
+                        .col-md-6 
+                            .what__left
+                                .what__name     
+                                    p TESTIMONIALs
+                                .what__title 
+                                    h5  What people say about our blog
+                                .what__desc 
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        .col-md-6 
+                            .what__right    
+                                .what__info 
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                .profile 
+                                    .profile__img 
+                                        img(src="/img/what-profile-img.png", alt="")
+                                    .profile__info
+                                        .profile__name 
+                                            h5 Jonathan Vallem
+                                        .profile__desc
+                                            p New york, USA
+
+        section.join 
+            .container
+                .join__main 
+                    .join__title 
+                        h5 Join our team to be a part of our story
+                    .join__desc     
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    .join__btn 
+                        a(href="./author.html") 
+                            button.bn.bn-join Join Now
+
+        footer.footer 
+            .container
+                .footer__top    
+                    .footer__logo 
+                        a(href="home.html") 
+                            img(src="/img/logo.png", alt="")
+                    .footer__menu 
+                        ul
+                            li
+                                a(href="./home.html") Home
+                            li
+                                a(href="./blog.html") Blog
+                            li
+                                a(href="./about.html") About Us
+                            li
+                                a(href="./login.html") Contact us
+                .footer__center 
+                    .row
+                        .col-lg-12.col-xl-6
+                            .footer__title 
+                                h5 Subscribe to our news letter to get latest updates and news
+                        .col-lg-12.col-xl-6
+                            .footer__right 
+                                .footer__input 
+                                    form(action="#")
+                                        input(type="email" placeholder="Enter Your Email")
+                                .footer__btn
+                                    button.bn.bn-footer Subscribe
+                .footer__bottom 
+                    .footer__info 
+                        p Finstreet 118 2561 Fintown
+                        p Hello@finsweet.com  020 7993 2905
+                    .footer__social 
+                        a(href="#") 
+                            i.fa-brands.fa-facebook
+                        a(href="#") 
+                            i.fa-brands.fa-twitter
+                        a(href="#") 
+                            i.fa-brands.fa-instagram
+                        a(href="#") 
+                            i.fa-brands.fa-linkedin
+
+
+
+
+
+                    
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js' integrity='sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF' crossorigin='anonymous')

@@ -1,0 +1,247 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/lib/bootstrap-grid.min.css")
+        link(rel="stylesheet" href="/lib/bootstrap-reboot.min.css")
+        link(rel="stylesheet" href="/lib/bootstrap-utilities.min.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        link(rel="stylesheet" href="/css/main.css")
+        title Document
+    body         
+        header.header
+            .container
+                .row
+                    .col-xl-6.col-lg-5.col-md-3.col-sm-12
+                        .header__logo 
+                            .header__img 
+                                a(href="home.html") 
+                                    img(src="/img/Logo.png" alt="")
+                            .header__icon 
+                                i.fa-solid.fa-bars.btn.btn-primary(type='button' data-bs-toggle='offcanvas' data-bs-target='#offcanvasRight' aria-controls='offcanvasRight')
+
+                                #offcanvasRight.offcanvas.offcanvas-end(tabindex='-1' aria-labelledby='offcanvasRightLabel')
+                                    .offcanvas-header
+                                        h5#offcanvasRightLabel MENU
+                                        button.btn-close.text-reset(type='button' data-bs-dismiss='offcanvas' aria-label='Close')
+                                    .offcanvas-body
+                                        .off 
+                                            .off__navigatoin 
+                                                ul
+                                                    li
+                                                        a(href="./home.html") Home
+                                                    li
+                                                        a(href="./blog.html") Blog
+                                                    li
+                                                        a(href="./about.html") About Us
+                                                    li
+                                                        a(href="./login.html") Contact us
+                                                    li#sub-m
+                                                        a#sub(href="#") Subscribe
+                    .col-xl-4.col-lg-5.col-md-6
+                        .header__menu 
+                            ul
+                                li
+                                    a(href="./home.html") Home
+                                li
+                                    a(href="./blog.html") Blog
+                                li
+                                    a(href="./about.html") About Us
+                                li
+                                    a(href="./login.html") Contact us
+                    .col-xl-2.col-lg-2.col-md-3
+                        .header__btn 
+                            a(href="./login.html") 
+                                button.bn.bn-header Subscribe    
+
+        section.duis 
+            .container  
+                .row
+                    .col-md-7.order-md-1.order-sm-2.order-2
+                        .duis__name 
+                            p Featured Post
+                        .duis__title 
+                            h5 Step-by-step guide to choosing great font pairs
+                        .duis__info#john
+                            span By
+                            p John Doe
+                            span  |  May 23, 2022
+                        .duis__desc     
+                            p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                        .duis__btn  
+                            a(href="./blog-post.html") 
+                                button.bn.bn-duis Read More >
+                    .col-md-5.order-md-2.order-sm-1.order-1
+                        .duis__img 
+                            img(src="/img/duis-img.png" alt="")
+
+        section.all 
+            .container  
+                .all__title 
+                    h5 All posts
+                .all__card
+                    .row    
+                        .col-md-5
+                            .all__img 
+                                img(src="/img/all-img1.png", alt="")
+                        .col-md-7
+                            .all__main 
+                                .all__info
+                                    p Startup
+                                .all__name
+                                    h5 Design tips for designers that cover everything you need
+                                .all__desc 
+                                    p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                .all__card
+                    .row    
+                        .col-md-5
+                            .all__img 
+                                img(src="/img/all-img2.png", alt="")
+                        .col-md-7
+                            .all__main 
+                                .all__info
+                                    p BUSINESS
+                                .all__name
+                                    h5 How to build rapport with your web design clients
+                                .all__desc 
+                                    p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                .all__card
+                    .row    
+                        .col-md-5
+                            .all__img 
+                                img(src="/img/all-img3.png", alt="")
+                        .col-md-7
+                            .all__main 
+                                .all__info
+                                    p Startup
+                                .all__name
+                                    h5 Logo design trends to avoid in 2022
+                                    p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                .all__card
+                    .row    
+                        .col-md-5
+                            .all__img 
+                                img(src="/img/all-img4.png", alt="")
+                        .col-md-7
+                            .all__main 
+                                .all__info
+                                    p TECHNOLOGY
+                                .all__name
+                                    h5 8 Figma design systems you can download for free today
+                                .all__desc 
+                                    p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                .all__card
+                    .row    
+                        .col-md-5
+                            .all__img 
+                                img(src="/img/all-img1.png", alt="")
+                        .col-md-7
+                            .all__main 
+                                .all__info
+                                    p Startup
+                                .all__name
+                                    h5 Font sizes in UI design: The complete guide to follow
+                                .all__desc 
+                                    p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+
+        section.choose 
+            .container
+                .choose__title 
+                    h5 Choose A Catagory
+                .row
+                    .col-md-3.col-sm-6.col-6
+                        a(href="./category.html") 
+                            .choose__main
+                                .choose__img 
+                                    img(src="../../../img/city.png", alt="")
+                                .choose__name 
+                                    h5 Business
+                                .choose__desc 
+                                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    .col-md-3.col-sm-6.col-6
+                        a(href="./category.html") 
+                            .choose__main
+                                .choose__img 
+                                    img#p-choose(src="../../../img/rocket-choose.png", alt="")
+                                .choose__name 
+                                    h5 Business
+                                .choose__desc 
+                                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    .col-md-3.col-sm-6.col-6
+                        a(href="./category.html") 
+                            .choose__main
+                                .choose__img 
+                                    img#p-choose(src="../../../img/economy-choose.png", alt="economy")
+                                .choose__name 
+                                    h5 Business
+                                .choose__desc 
+                                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    .col-md-3.col-sm-6.col-6
+                        a(href="./category.html") 
+                            .choose__main
+                                .choose__img 
+                                    img#p-choose(src="../../../img/cyborg-choose.png", alt="")
+                                .choose__name 
+                                    h5 Business
+                                .choose__desc 
+                                    p Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+
+        section.join 
+            .container
+                .join__main 
+                    .join__title 
+                        h5 Join our team to be a part of our story
+                    .join__desc     
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                    .join__btn 
+                        a(href="./author.html") 
+                            button.bn.bn-join Join Now
+
+        footer.footer 
+            .container
+                .footer__top    
+                    .footer__logo 
+                        a(href="home.html") 
+                            img(src="/img/logo.png" alt="")
+                    .footer__menu 
+                        ul
+                            li
+                                a(href="./home.html") Home
+                            li
+                                a(href="./blog.html") Blog
+                            li
+                                a(href="./about.html") About Us
+                            li
+                                a(href="./login.html") Contact us
+                .footer__center 
+                    .row
+                        .col-lg-12.col-xl-6
+                            .footer__title 
+                                h5 Subscribe to our news letter to get latest updates and news
+                        .col-lg-12.col-xl-6
+                            .footer__right 
+                                .footer__input 
+                                    form(action="#")
+                                        input(type="email" placeholder="Enter Your Email")
+                                .footer__btn
+                                    button.bn.bn-footer Subscribe
+                .footer__bottom 
+                    .footer__info 
+                        p Finstreet 118 2561 Fintown
+                        p Hello@finsweet.com  020 7993 2905
+                    .footer__social 
+                        a(href="#") 
+                            i.fa-brands.fa-facebook
+                        a(href="#") 
+                            i.fa-brands.fa-twitter
+                        a(href="#") 
+                            i.fa-brands.fa-instagram
+                        a(href="#") 
+                            i.fa-brands.fa-linkedin
+
+
+
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js' integrity='sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF' crossorigin='anonymous')

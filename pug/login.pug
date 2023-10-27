@@ -1,0 +1,147 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/lib/bootstrap-grid.min.css")
+        link(rel="stylesheet", href="/lib/bootstrap-reboot.min.css")
+        link(rel="stylesheet", href="/lib/bootstrap-utilities.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==", crossorigin="anonymous", referrerpolicy="no-referrer")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous")
+        link(rel="stylesheet", href="/css/main.css")
+        title Document
+    body 
+        header.header
+            .container
+                .row
+                    .col-xl-6.col-lg-5.col-md-3.col-sm-12
+                        .header__logo 
+                            .header__img 
+                                a(href="home.html") 
+                                    img(src="/img/Logo.png", alt="")
+                            .header__icon 
+                                i.fa-solid.fa-bars.btn.btn-primary(type='button', data-bs-toggle='offcanvas', data-bs-target='#offcanvasRight', aria-controls='offcanvasRight')
+
+                                #offcanvasRight.offcanvas.offcanvas-end(tabindex='-1', aria-labelledby='offcanvasRightLabel')
+                                    .offcanvas-header
+                                        h5#offcanvasRightLabel MENU
+                                        button.btn-close.text-reset(type='button', data-bs-dismiss='offcanvas', aria-label='Close')
+                                    .offcanvas-body
+                                        .off 
+                                            .off__navigatoin 
+                                                ul
+                                                    li
+                                                        a(href="./home.html") Home
+                                                    li
+                                                        a(href="./login.html") Blog
+                                                    li
+                                                        a(href="./about.html") About Us
+                                                    li
+                                                        a(href="#") Contact us
+                                                    li#sub-m
+                                                        a#sub(href="#") Subscribe
+                    .col-xl-4.col-lg-5.col-md-6
+                        .header__menu 
+                            ul
+                                li
+                                    a(href="./home.html") Home
+                                li
+                                    a(href="./blog.html") Blog
+                                li
+                                    a(href="./about.html") About Us
+                                li
+                                    a(href="./login.html") Contact us
+                    .col-xl-2.col-lg-2.col-md-3
+                        .header__btn 
+                            a(href="./login.html") 
+                                button.bn.bn-header Subscribe  
+
+        section.contact 
+            .container
+                .contact__top 
+                    .contact__name 
+                        p Contact us
+                    .contact__title 
+                        h5 Let’s Start a Conversation
+                    .contact__desc 
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                .contact__purple 
+                    .row
+                        .col-sm-6.col-6 
+                            .contact__info 
+                                p Working hours
+                            .contact__day
+                                h5 Monday To Friday
+                            .contact__time 
+                                h5 9:00 AM to 8:00 PM 
+                            .contact__our 
+                                p 9:00 AM to 8:00 PM 
+                        .col-sm-6.col-6 
+                            .contact__info 
+                                p Working hours
+                            .contact__number 
+                                h5 020 7993 2905
+                            .contact__email 
+                                p hello@finsweet.com
+
+                .contact__input 
+                    form(action="#")
+                        input(type="text" placeholder="Full Name")
+                        input(type="email" placeholder="Your Email")
+                        .accordion#accordionExample
+                            .accordion-item
+                                h2.accordion-header#headingOne
+                                    button.accordion-button(type="button", data-bs-toggle="collapse", data-bs-target="#collapseOne", aria-expanded="true", aria-controls="collapseOne") Query Related  
+                                    
+                                #collapseOne.accordion-collapse.collapse(aria-labelledby="headingOne", data-bs-parent="#accordionExample")
+                                    .accordion-body
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum enim nostrum voluptate eum incidunt facilis consectetur iste et sint quas, temporibus tempore ratione error quibusdam, velit voluptates aut. Veritatis explicabo obcaecati aliquam necessitatibus molestiae dolores similique quidem fugit saepe quos voluptas voluptatem at sint tempora voluptatum, neque aliquid dolorum deserunt. Delectus, dignissimos ratione deserunt voluptate, facilis esse eum odit cupiditate repellat natus nam culpa? Necessitatibus ullam vero quo maxime aliquam, perspiciatis distinctio blanditiis eos. Minus aperiam laudantium facilis odit, aut cum natus animi eveniet ipsa nulla blanditiis, fuga cupiditate voluptate, iste maxime velit distinctio debitis unde veniam ad. Animi, est.
+                        input#messege(type="text" placeholder="Message")
+                        input.bn.bn-input(type="submit" value="Send Message")
+
+        footer.footer 
+            .container
+                .footer__top    
+                    .footer__logo 
+                        a(href="home.html") 
+                            img(src="/img/logo.png" alt="")
+                    .footer__menu 
+                        ul
+                            li
+                                a(href="./home.html") Home
+                            li
+                                a(href="./blog.html") Blog
+                            li
+                                a(href="./about.html") About Us
+                            li
+                                a(href="./login.html") Contact us
+                .footer__center 
+                    .row
+                        .col-lg-12.col-xl-6
+                            .footer__title 
+                                h5 Subscribe to our news letter to get latest updates and news
+                        .col-lg-12.col-xl-6
+                            .footer__right 
+                                .footer__input 
+                                    form(action="#")
+                                        input(type="email" placeholder="Enter Your Email")
+                                .footer__btn
+                                    button.bn.bn-footer Subscribe
+                .footer__bottom 
+                    .footer__info 
+                        p Finstreet 118 2561 Fintown
+                        p Hello@finsweet.com  020 7993 2905
+                    .footer__social 
+                        a(href="#") 
+                            i.fa-brands.fa-facebook
+                        a(href="#") 
+                            i.fa-brands.fa-twitter
+                        a(href="#") 
+                            i.fa-brands.fa-instagram
+                        a(href="#") 
+                            i.fa-brands.fa-linkedin
+
+
+
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js' integrity='sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF' crossorigin='anonymous')
